@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUserActivity">
+
+    <View
+        android:id="@+id/register_user_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+        android:id="@+id/register_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_tf"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_user_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <Button
+        android:id="@+id/register_user_confirm_button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:onClick="createUser"
+        android:text="@string/registerButton"
+        app:layout_constraintEnd_toEndOf="@+id/register_user_passwordVerificationInputField"
+        app:layout_constraintStart_toStartOf="@+id/register_user_passwordVerificationInputField"
+        app:layout_constraintTop_toBottomOf="@+id/register_user_passwordVerificationInputField" />
+
+    <TextView
+        android:id="@+id/register_user_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_tf"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_user_passwordInputField"
+        app:layout_constraintStart_toStartOf="@+id/register_user_passwordInputField" />
+
+    <EditText
+        android:id="@+id/register_user_passwordInputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_user_usernameInputField" />
+
+    <EditText
+        android:id="@+id/register_user_usernameInputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/personName_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_user_divider" />
+
+    <TextView
+        android:id="@+id/register_user_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personName_tf"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_user_usernameInputField"
+        app:layout_constraintStart_toStartOf="@+id/register_user_usernameInputField" />
+
+    <EditText
+        android:id="@+id/register_user_passwordVerificationInputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password_verify_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/register_user_passwordInputField"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/register_user_passwordInputField"
+        app:layout_constraintTop_toBottomOf="@+id/register_user_passwordInputField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

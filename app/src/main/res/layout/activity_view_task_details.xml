@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTaskDetails">
+
+    <TextView
+        android:id="@+id/task_detail_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_detail_title_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskTitleField" />
+
+    <EditText
+        android:id="@+id/task_detail_taskTitleField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_detail_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_detail_label_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_detail_label_text"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_label_text" />
+
+    <EditText
+        android:id="@+id/task_detail_taskDescriptionField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/task_detail_taskTitleField" />
+
+    <TextView
+        android:id="@+id/task_detail_deadline_timeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/task_detail_taskDescriptionField"
+        app:layout_constraintStart_toEndOf="@+id/task_detail_deadline_dateText"
+        app:layout_constraintTop_toBottomOf="@+id/task_detail_taskDescriptionField" />
+
+    <TextView
+        android:id="@+id/task_detail_deadline_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_detail_deadline_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_detail_deadline_dateText"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_deadline_dateText" />
+
+    <TextView
+        android:id="@+id/task_detail_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_detail_description_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_detail_taskDescriptionField"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskDescriptionField" />
+
+    <TextView
+        android:id="@+id/task_detail_deadline_dateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/task_detail_deadline_timeText"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/task_detail_taskDescriptionField" />
+
+    <TextView
+        android:id="@+id/task_detail_label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/task_detail_deadline_dateText" />
+
+    <TextView
+        android:id="@+id/task_detail_lastchecked_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_detail_lastchecked_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_detail_lastchecked_text"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_lastchecked_text" />
+
+    <TextView
+        android:id="@+id/task_detail_lastchecked_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/task_detail_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/task_detail_label_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

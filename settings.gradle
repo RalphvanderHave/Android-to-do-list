@@ -1,0 +1,2 @@
+rootProject.name = "group5-to-day"
+include ':app'

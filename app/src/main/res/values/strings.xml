@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">To-day</string>
+    <!--Main activity-->
+    <string name="main_activity_subtitle">Everything you need to do, today.</string>
+    <string name="main_activity_username">Username</string>
+    <string name="main_activity_password">Password</string>
+    <string name="main_activity_email_placeholder">name@email.com</string>
+    <string name="main_activity_password_placeholder">password</string>
+    <string name="main_activity_login_button">Login</string>
+    <string name="main_activity_register_user_button">Register New User</string>
+    <string name="main_activity_made_by">Jos Vrij, Ralph van der Have, Bart Raaijmakers</string>
+    <!--View tasks activity-->
+    <string name="view_tasks_activity_label">Pending tasks</string>
+    <string name="view_tasks_activity_create_task_button">Create New Task</string>
+    <string name="view_tasks_check_selected_tasks_button">Complete Selected Tasks</string>
+    <string name="view_tasks_view_checked_tasks_button">View Completed Tasks</string>
+    <string name="view_tasks_edit_tasks_button">Edit Tasks</string>
+    <!--View checked tasks activity-->
+    <string name="view_checked_tasks_label">Completed tasks</string>
+    <!--Edit task activity-->
+    <string name="task_edit_label">Pick a task to edit</string>
+    <string name="task_edit_title">Edit Task</string>
+    <string name="task_edit_title_textview">Title</string>
+    <string name="task_edit_description_textview">Description</string>
+    <string name="task_edit_deadline_textview">Deadline</string>
+    <string name="task_edit_label_textview">Label</string>
+    <string name="task_edit_deadline_pickDateButton">Change</string>
+    <string name="task_edit_deadline_pickTimeButton">Change</string>
+    <string name="task_edit_deleteTaskButton">Delete Task</string>
+    <string name="task_edit_saveTaskButton">Save Changes</string>
+    <!--View task details activity-->
+    <string name="task_detail_title">Task Details</string>
+    <string name="task_detail_title_textview">Title</string>
+    <string name="task_detail_description_textview">Description</string>
+    <string name="task_detail_deadline_textview">Deadline</string>
+    <string name="task_detail_label_textview">Label</string>
+    <string name="task_detail_lastchecked_textview">Last Completed</string>
+    <!--View checked tasks activity-->
+    <string name="view_checked_tasks_uncheck_button">Unchecked selected tasks</string>
+    <!--View labels activity-->
+    <string name="view_labels_label">All labels</string>
+    <string name="view_labels_delete_button">Delete selected labels</string>
+    <string name="view_labels_create_new_label_button">Create new label</string>
+    <!--Create label activity-->
+    <string name="create_label_label">Create a Label</string>
+    <string name="create_label_text">Label description</string>
+    <string name="create_label_description">Describe the label</string>
+    <string name="create_label_button">Save</string>
+    <string name="createLabel">Create New Label</string>
+    <string name="descriptionLabel">Label</string>
+    <string name="descriptionLabelField">Give a label name</string>
+    <string name="completeLabel">Complete Label</string>
+    <!--Create task activity-->
+    <string name="create_task_label">Create a task</string>
+    <string name="create_task_manage_labels_button">Manage Labels</string>
+    <string name="create_task_create_button">Create this task</string>
+    <string name="createTask">Create Task</string>
+    <string name="titleTask">Set task title</string>
+    <string name="titleTextFieldTask">Type title here</string>
+    <string name="descriptionTask">Give task description</string>
+    <string name="descriptionTextFieldTask">Type description here</string>
+    <string name="deadlineTask">Set deadline for task</string>
+    <string name="selectDate">Date</string>
+    <string name="selectTime">Time</string>
+    <string name="deadlineTextFieldTask">Type a date here</string>
+    <string name="giveLabelToTask">Select label for task</string>
+    <string name="view_task_create_task_button">Create Task</string>
+    <string name="selectLabelSpinner">Select Label</string>
+    <!--Register-->
+    <string name="register_tf">Register</string>
+    <string name="register_user_label">Register a user</string>
+    <string name="personName_tf">Name</string>
+    <string name="personName_fill_in">personNameRegister</string>
+    <string name="personName_hint">Name</string>
+    <string name="password_tf">Password</string>
+    <string name="password_fill_in">passwordRegister</string>
+    <string name="password_hint">Password</string>
+    <string name="password_verify"> </string>
+    <string name="password_verify_hint">Verify Password</string>
+    <string name="registerButton">Confirm</string>
+</resources>

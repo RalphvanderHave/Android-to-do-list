@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity">
+
+    <Button
+        android:id="@+id/task_edit_manage_labels_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="goToManageLabel"
+        android:text="@string/create_task_manage_labels_button"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_taskTitleField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/task_edit_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_edit_title_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_edit_taskTitleField"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskTitleField" />
+
+    <EditText
+        android:id="@+id/task_edit_taskTitleField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_edit_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/task_detail_label_textview"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskDescriptionField"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_deadline_timeText" />
+
+    <EditText
+        android:id="@+id/task_edit_taskDescriptionField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_taskTitleField"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskTitleField"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_taskTitleField" />
+
+    <Button
+        android:id="@+id/task_edit_pickDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_edit_deadline_pickDateButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/task_edit_deadline_dateText"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_taskDescriptionField" />
+
+    <TextView
+        android:id="@+id/task_edit_deadline_timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskDescriptionField"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_deadline_dateText" />
+
+    <TextView
+        android:id="@+id/task_edit_deadline_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_edit_deadline_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_edit_deadline_dateText"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_deadline_dateText" />
+
+    <TextView
+        android:id="@+id/task_edit_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_edit_description_textview"
+        app:layout_constraintBottom_toTopOf="@+id/task_edit_taskDescriptionField"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskDescriptionField" />
+
+    <TextView
+        android:id="@+id/task_edit_deadline_dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_taskDescriptionField"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_taskDescriptionField" />
+
+    <Button
+        android:id="@+id/task_edit_pickTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_edit_deadline_pickTimeButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/task_edit_deadline_timeText"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_taskDescriptionField" />
+
+    <Button
+        android:id="@+id/task_edit_deadline_saveTaskButton"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saveChanges"
+        android:text="@string/task_edit_saveTaskButton"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_manage_labels_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_manage_labels_button"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_manage_labels_button" />
+
+    <Button
+        android:id="@+id/task_edit_deadline_deleteTaskButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:onClick="deleteTask"
+        android:text="@string/task_edit_deleteTaskButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/task_edit_deadline_saveTaskButton"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_deadline_saveTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_deadline_saveTaskButton" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/task_edit_label_textview"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_label_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
